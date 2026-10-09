@@ -1,3 +1,13 @@
 spring:
   application:
     name: ai-chat-assistant
+
+  ai:
+    deepseek:
+      api-key: ${DEEPSEEK_API_KEY:}
+      chat:
+        model: deepseek-chat
+        temperature: 0.7
+
+server:
+    port: 8080
